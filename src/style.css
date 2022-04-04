@@ -1,1 +1,60 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* .card-base {
+  margin: 0 auto;
+  height: 400px;
+  width: 300px;
+  border: 1px solid black;
+}
+.card-number {
+  min-height: 6.5em;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+} */
+
+/* Bootstrap CSS */
+body {
+  text-align: center;
+}
+.container-fluid {
+  margin: 25px 40% !important;
+  /* text-align: center !important; */
+}
+.card {
+  /* text-align: center; */
+  margin-top: 50px !important;
+  height: 400px;
+  width: 300px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.card-body {
+  height: 350px;
+}
+.card-title {
+  padding-top: 100px !important;
+  font-size: 100px;
+  color: black;
+}
+.card-header {
+  display: flex;
+  float: left;
+  border: none;
+  height: 70px;
+}
+.card-footer {
+  display: flex;
+  float: right;
+  border: none;
+  height: 70px;
+  transform: rotate(180deg);
+}
+.fa-heart,
+.fa-diamond {
+  color: red;
+  font-size: 50px;
+}
+#club,
+#spade {
+}

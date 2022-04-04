@@ -3,27 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
+    <title>Random Card Dealer</title>
+    <!-- <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
-    />
+    /> -->
+    <script
+      src="https://kit.fontawesome.com/2d49b71255.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <div class="card border-success mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-transparent border-success">
+          <!-- <i class="fa-solid fa-heart"></i> -->
+          <img
+            id="spade"
+            src="http://jede.cc/icons/spade.png"
+            alt="spade-icon"
+          />
+        </div>
+        <div class="card-body text-success">
+          <h5 class="card-title">A</h5>
+        </div>
+        <div class="card-footer bg-transparent border-success">
+          <!-- <i class="fa-solid fa-diamond"></i> -->
+          <img src="http://jede.cc/icons/spade.png" alt="spade-icon" />
+        </div>
       </div>
+
+      <!-- <h1 class="mt-5">Hello Rigo!</h1> -->
+      <!-- <div class="card-base">
+        <img src="http://jede.cc/icons/spade.png" alt="spade-icon"></a>
+        <img src="http://jede.cc/icons/club.png" alt="club-icon"></a>
+
+        <i class="fa-solid fa-spade"></i>
+        <i class="fa-solid fa-club"></i>
+        <i class="fa-solid fa-diamond"></i>
+        <i class="fa-solid fa-heart"></i>
+        <div class="card-number">
+          A
+        </div>
+      </div> -->
     </div>
   </body>
 </html>
