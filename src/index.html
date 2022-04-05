@@ -3,13 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random Card Dealer</title>
-    <!-- <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    /> -->
+    <title>Random Card Dealer</title>    
     <script
       src="https://kit.fontawesome.com/2d49b71255.js"
       crossorigin="anonymous"
@@ -17,38 +11,29 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center d-flex align-items-center flex-column">
       <div class="card border-success mb-3" style="max-width: 18rem;">
         <div class="card-header bg-transparent border-success">
-          <!-- <i class="fa-solid fa-heart"></i> -->
-          <img
-            id="spade"
-            src="http://jede.cc/icons/spade.png"
-            alt="spade-icon"
-          />
+          <h3 id="suitTop">♠️</h3>
+          
         </div>
         <div class="card-body text-success">
-          <h5 class="card-title">A</h5>
+          <h5 class="card-title" id="cardName">A</h5>
         </div>
         <div class="card-footer bg-transparent border-success">
-          <!-- <i class="fa-solid fa-diamond"></i> -->
-          <img src="http://jede.cc/icons/spade.png" alt="spade-icon" />
+          <h3 id="suitBottom">♠️</h3>          
         </div>
       </div>
-
-      <!-- <h1 class="mt-5">Hello Rigo!</h1> -->
-      <!-- <div class="card-base">
-        <img src="http://jede.cc/icons/spade.png" alt="spade-icon"></a>
-        <img src="http://jede.cc/icons/club.png" alt="club-icon"></a>
-
-        <i class="fa-solid fa-spade"></i>
-        <i class="fa-solid fa-club"></i>
-        <i class="fa-solid fa-diamond"></i>
-        <i class="fa-solid fa-heart"></i>
-        <div class="card-number">
-          A
-        </div>
-      </div> -->
+        <button
+          type="button"
+          class="btn btn-outline-dark"
+          onclick="clickFunction();"
+          id="myBtn"
+          role="button"
+        >
+          Change card
+        </button>   
+      </div>
     </div>
   </body>
 </html>
