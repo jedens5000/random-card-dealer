@@ -58,5 +58,5 @@ button {
   background-color: lightblue !important;
 }
 button:hover {
-  background-color: blue !important;
+  background-color: rgb(108, 204, 236) !important;
 }
