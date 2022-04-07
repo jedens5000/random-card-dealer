@@ -25,11 +25,9 @@ var value = values[Math.floor(Math.random() * values.length)];
 
 function toggleImg() {
   var x = document.getElementById("ace");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "none";
-  }
+  x.style.display === "flex"
+    ? (x.style.display = "none")
+    : (x.style.display = "none");
 }
 
 document.clickFunction = clickFunction => {
