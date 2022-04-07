@@ -23,16 +23,14 @@ const values = [
 var suit = suits[Math.floor(Math.random() * suits.length)];
 var value = values[Math.floor(Math.random() * values.length)];
 
-window.onload = () => {
-  if (suit === "♦️" || suit === "♥️") {
-    document.querySelector("#suitTop").style.color = "red";
-    document.querySelector("#suitBottom").style.color = "red";
-    document.querySelector("#cardName").style.color = "red";
+function toggleImg() {
+  var x = document.getElementById("ace");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
   }
-  document.querySelector("#suitTop").innerHTML = suit;
-  document.querySelector("#suitBottom").innerHTML = suit;
-  document.querySelector("#cardName").innerHTML = value;
-};
+}
 
 document.clickFunction = clickFunction => {
   var suit = suits[Math.floor(Math.random() * suits.length)];
@@ -50,3 +48,6 @@ document.clickFunction = clickFunction => {
   document.querySelector("#suitBottom").innerHTML = suit;
   document.querySelector("#cardName").innerHTML = value;
 };
+
+var btn = document.getElementById("myBtn");
+btn.addEventListener("click", toggleImg);

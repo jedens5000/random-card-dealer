@@ -7,6 +7,16 @@ body {
 .container-fluid {
   margin: 25px auto !important;
 }
+img {
+  display: flex;
+  float: inline-start;
+  position: absolute;
+  height: 450px;
+  width: 300px;
+  border-radius: 3% !important;
+  background-color: green;
+  z-index: 2;
+}
 .card {
   margin-top: 50px !important;
   height: 450px;
@@ -14,6 +24,7 @@ body {
   display: table-cell;
   vertical-align: middle;
   border-radius: 3% !important;
+  z-index: 0;
 }
 .card-body {
   height: 350px;
